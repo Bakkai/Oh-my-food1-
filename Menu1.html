@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sass/Base/icons/css/all.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="sass/Base/icons/css/all.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/office/16/000000/dining-room.png"
+    />
+    <link rel="stylesheet" href="style__menu.css" />
     <title>OhMyFood - À la française</title>
   </head>
   <body>
@@ -19,6 +34,7 @@
     </header>
 
     <div class="background__image">
+      <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image du restaurant a la française">
       <section class="menu__title">
         <h1 class="menus__title">À la française</h1>
         <i class="far fa-heart"></i>
@@ -31,7 +47,7 @@
           <div class="menu__choice">
             <h2 class="menus__title">
               ENTRÉES
-              <span id="menu__bar--1"></span>
+              <span id="menu__bar"></span>
             </h2>
           </div>
         </section>
@@ -86,7 +102,7 @@
           <div class="menu__choice">
             <h2 class="menus__title">
               PLATS
-              <span id="menu__bar--2"></span>
+              <span id="menu__bar"></span>
             </h2>
           </div>
         </section>
@@ -141,7 +157,7 @@
           <div class="menu__choice">
             <h2 class="menus__title">
               DESSERTS
-              <span id="menu__bar--3"></span>
+              <span id="menu__bar"></span>
             </h2>
           </div>
         </section>
@@ -196,25 +212,21 @@
       <button class="btn__menuu">Commander</button>
     </div>
 
-    <footer class="footer__index">
-      <div class="footer__title">
-        <a href="./index.html"><h5>ohmyfood</h5></a>
-      </div>
-      <ul class="footer__ul">
-        <li class="footer__liA">
-          <i class="fas fa-utensils"></i>
-          <a href="#">Proposer un restaurant</a>
+    <footer>
+      <a href="#">
+        <img src="images/logo/ohmyfood@2x.svg" alt="oh my food logo"
+      /></a>
+      <ul>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
         </li>
-        <li class="footer__liB">
-          <i class="fas fa-hands-helping"> </i>
-          <a href="#">Devenir partenaire</a>
+        <li>
+          <a href="#"
+            ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+          >
         </li>
-        <li class="footer__liC">
-          <a href="#">Mentions légales</a>
-        </li>
-        <li class="footer__liD">
-          <a href="mailto:contact@ohmyfood.com">Contact</a>
-        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
       </ul>
     </footer>
   </body>
