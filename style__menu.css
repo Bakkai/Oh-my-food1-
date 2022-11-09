@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+  }
 header {
     display: flex;
     justify-content: center;
@@ -35,10 +41,11 @@ header i {
     padding: 5px 5%;
     background-color: #f6f6f6;
     font-family: cursive;
-    font-size: large;
+    font-size: 26px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1;
 }
 .menu__title .fa-heart {
     left: 300px;
