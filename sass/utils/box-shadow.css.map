@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "style.scss"
+        "box-shadow.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "box-shadow.css"
 }

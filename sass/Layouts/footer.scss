@@ -1,0 +1,30 @@
+footer {
+  display: block;
+  background-color: #353535;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  padding: 25px;
+  color: white;
+  a {
+    color: white;
+    img {
+      color: #fff;
+      width: 120px;
+      filter: invert(10);
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding: 5px 0 5px 0;
+    }
+  }
+  ul .fa-utensils {
+    margin-right: 12px;
+  }
+  ul .fa-hands-helping {
+    margin-right: 5px;
+  }
+}

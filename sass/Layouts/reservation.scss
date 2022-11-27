@@ -1,0 +1,43 @@
+.reservation {
+  background: whitesmoke;
+  padding: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  & .btn__explore {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    width: 300px;
+    height: auto;
+    & a {
+      text-decoration: none;
+    }
+  }
+  & .btn {
+    width: min-content;
+    align-self: center;
+    white-space: nowrap;
+    margin: 2rem;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: white;
+    font-size: large;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 7%;
+    box-shadow: 4px 4px 2px lightgrey;
+    max-width: min-content;
+    cursor: pointer;
+  }
+}
+.reservation__title {
+  font-size: 35px;
+  padding: 15px;
+}
+.reservation__undertitle {
+  font-size: 23px;
+  font-weight: 200;
+}
