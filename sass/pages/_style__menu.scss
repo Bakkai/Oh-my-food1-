@@ -76,16 +76,29 @@ header {
     padding-top: 20px;
   }
 }
-.carte__bouton {
- 
-  i {
-  visibility: hidden;
-  background-color: #66e7c6;
-  color: #fff;
+
+  .carte__bouton {
+
+    animation: appear 3s;
+ .carte_checkIcon {
   position: absolute;
-  right: 1rem;
-  width: 3rem;
-  height: 3.5rem;
+  text-align: center;
+  right: -100px;
+  top: 0;
+  width: 100px;
+  height: 95px;
+  background-color: #99E2D0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  visibility: hidden;
+ }
+  i {
+    font-size: 25px;
+  color: #fff;
+  visibility: hidden;
   }
 }
 

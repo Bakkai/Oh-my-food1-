@@ -1,0 +1,6 @@
+@mixin shadow {
+  box-shadow: 4px 4px 2px lightgrey;
+}
+@mixin zoom {
+  transform: scale(1.02);
+}

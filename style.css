@@ -11,7 +11,17 @@ body {
   width: 100%;
   font-size: 16px;
 }
+.loading_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeout 0.2s linear;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  width: 99%;
+  height: 100%;
 
+}  
 a {
   text-decoration: none;
   color: #000;
@@ -21,23 +31,43 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 header img {
   margin: auto;
   height: 50px;
 }
+header input {
+  border-style: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 30px;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  align-items: center;
+  background-color: #eaeaea;
+}
+header ::-moz-placeholder {
+  text-align: center;
+}
+header :-ms-input-placeholder {
+  text-align: center;
+}
+header ::placeholder {
+  text-align: center;
+}
 
 .header__logo {
   background: white;
-  height: 100px;
+  height: 200px;
   width: 100%;
-  box-shadow: rgba(115, 118, 120, 0.2) 0px 8px 24px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
-  -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
+  box-shadow: 4px 4px 2px lightgrey;
   z-index: 1;
+  box-shadow: 4px 4px 2px lightgrey;
 }
 
 .header__search {
@@ -45,24 +75,17 @@ header img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
-  height: 50px;
+  height: 98px;
   background-color: #eaeaea;
   width: 100%;
   margin: 0 auto;
+  font-size: 30px;
   padding: 20px;
 }
 .header__search i {
   font-weight: 900;
-}
-
-header input {
-  border-style: none;
-  outline: none;
-  font-weight: 500;
-  padding: 15px 0px;
-  display: flex;
-  background-color: #eaeaea;
+  position: relative;
+  left: 30%;
 }
 
 .functionning {
@@ -72,7 +95,8 @@ header input {
 }
 .functionning h2 {
   display: block;
-  font-size: 25px;
+  padding-top: 50px;
+  font-size: 40px;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
   -webkit-margin-after: 10px;
@@ -91,23 +115,25 @@ header input {
 
 .functionning__a {
   display: flex;
-  margin: 0 10px;
+  margin: 60px 10px;
   width: 100%;
+  height: 120px;
   justify-items: center;
   align-items: center;
+  font-size: 30px;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   padding: 20px 35px 20px 35px;
-  border-radius: 20px;
+  border-radius: 40px;
   position: relative;
   margin-bottom: 30px;
   font-weight: 700;
-  box-shadow: rgba(103, 101, 101, 0.39);
-  -webkit-box-shadow: rgba(103, 101, 101, 0.39);
-  -moz-box-shadow: rgba(103, 101, 101, 0.39);
+  box-shadow: 4px 4px 2px lightgrey;
 }
 .functionning__a i {
   padding-right: 30px;
+  padding-left: 30px;
+  font-size: 30px;
   color: #7e7e7e;
 }
 
@@ -115,15 +141,15 @@ header input {
   position: absolute;
   left: 0;
   transform: translate(-15px);
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #9356dc;
   color: #fff;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 50%;
 }
 
@@ -138,20 +164,11 @@ header input {
   background: whitesmoke;
   padding: 50px;
   display: flex;
+  height: 580px;
+  font-size: 30px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
-}
-.reservation .btn__explore {
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  width: 300px;
-  height: auto;
-}
-.reservation .btn__explore a {
-  text-decoration: none;
 }
 .reservation .btn {
   width: -webkit-min-content;
@@ -162,7 +179,7 @@ header input {
   margin: 2rem;
   background: linear-gradient(170deg, #ff79da, #9356dc);
   color: white;
-  font-size: large;
+  font-size: 30px;
   padding: 1rem;
   border-radius: 50px;
   border: none;
@@ -172,6 +189,17 @@ header input {
   max-width: -moz-min-content;
   max-width: min-content;
   cursor: pointer;
+}
+.reservation .btn__explore {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  width: 300px;
+  height: 70px;
+}
+.reservation .btn__explore a {
+  text-decoration: none;
 }
 
 .reservation__title {
@@ -186,21 +214,21 @@ header input {
 
 .restaurant {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
   background-color: #f6f6f6;
   display: block;
 }
 .restaurant h2 {
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Roboto";
   font-weight: 700;
   padding: 20px;
 }
 .restaurant img {
   width: 100%;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 350px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -215,7 +243,7 @@ header input {
 }
 .restaurant__cards .card {
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   width: 100%;
   box-shadow: -2px 5px 16px -4px rgba(0, 0, 0, 0.3);
   margin-bottom: 2em;
@@ -235,37 +263,38 @@ header input {
   font-weight: 700;
   background-color: #99e2d0;
   color: #008766;
-  padding: 10px;
-  border-radius: 2px;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .card__description {
   display: flex;
+  height: 250px;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 15px;
-  padding-right: 20px;
+  justify-content: flex-end;
+  padding: 0 20px 30px 15px;
 }
 .card__description h4,
 .card__description p {
   margin: 5px 0;
-  font-size: 25px;
+  font-size: 30px;
 }
 .card__description .fa-heart {
   position: absolute;
-  bottom: 5%;
+  font-size: 45px;
+  bottom: 13%;
   right: 5%;
 }
 .card__description .fas {
   opacity: 0;
-  color: transparent;
-  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
 }
 .card__description .fas:hover {
   opacity: 1;
+  color: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
 }
 
 footer {
@@ -273,7 +302,8 @@ footer {
   background-color: #353535;
   margin: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 30px;
+  vertical-align: baseline;
   padding: 25px;
   color: white;
 }
@@ -282,8 +312,9 @@ footer a {
 }
 footer a img {
   color: #fff;
-  width: 120px;
+  width: 220px;
   filter: invert(10);
+  padding-top: 30px;
 }
 footer ul {
   list-style-type: none;

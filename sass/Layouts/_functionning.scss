@@ -1,11 +1,12 @@
-@import "../utils/box-shadow.scss";
+@import "../utils/_mixin.scss";
 .functionning {
   padding: 40px 20px;
   width: 100%;
   background-color: #fff;
   h2 {
     display: block;
-    font-size: 25px;
+    padding-top: 50px;
+    font-size: 40px;
     margin-block-start: 10px;
     margin-block-end: 10px;
     margin-inline-start: 0px;
@@ -21,36 +22,40 @@
 }
 .functionning__a {
   display: flex;
-  margin: 0 10px;
+  margin: 60px 10px;
   width: 100%;
+  height: 120px;
   justify-items: center;
   align-items: center;
+  font-size: 30px;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   padding: 20px 35px 20px 35px;
-  border-radius: 20px;
+  border-radius: 40px;
   position: relative;
   margin-bottom: 30px;
   font-weight: 700;
+  @include _mixin.shadow;
   i {
     padding-right: 30px;
-    color: #7e7e7e;
+  padding-left: 30px;
+  font-size: 30px;
+  color: #7e7e7e;
   }
-  @include shadow;
 }
 .functionning__a__number {
   position: absolute;
   left: 0;
   transform: translate(-15px);
-  width: 30px;
-  height: 30px;
-  display: flex;
+  width: 50px;
+  height: 50px;
+  display:flex;
   align-items: center;
   justify-content: center;
   background-color: #9356dc;
   color: #fff;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 50%;
 }
 .functionning__a:hover {

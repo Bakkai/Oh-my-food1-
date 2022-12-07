@@ -3,15 +3,17 @@ footer {
   background-color: #353535;
   margin: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 30px;
+  vertical-align: baseline;
   padding: 25px;
   color: white;
   a {
     color: white;
     img {
       color: #fff;
-      width: 120px;
-      filter: invert(10);
+  width: 220px;
+  filter: invert(10);
+  padding-top: 30px;
     }
   }
   ul {

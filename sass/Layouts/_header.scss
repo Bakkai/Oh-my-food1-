@@ -1,68 +1,57 @@
+@import "../utils/_mixin.scss";
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
+  justify-content: space-between;
+  
   img {
     margin: auto;
     height: 50px;
   }
+  input {
+    border-style: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 30px;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+  }
+  ::placeholder {
+    text-align: center;
+  }
 }
-
 .header__logo {
   background: white;
-  height: 100px;
+  height: 200px;
   width: 100%;
-  -webkit-box-shadow: rgba(115, 118, 120, 0.2) 0px 8px 24px;
-  box-shadow: rgba(115, 118, 120, 0.2) 0px 8px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
-  -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.39);
+  box-shadow: 4px 4px 2px lightgrey;
   z-index: 1;
+  @include _mixin.shadow;
 }
-
 .header__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
-  height: 50px;
+  height: 98px;
   background-color: #eaeaea;
   width: 100%;
   margin: 0 auto;
+  font-size: 30px;
   padding: 20px;
-
-  & i {
+  i {
     font-weight: 900;
+    position: relative;
+    left: 30%;
   }
 }
 
-header input {
-  border-style: none;
-  outline: none;
-  font-weight: 500;
-  padding: 15px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #eaeaea;
-}
+
+
