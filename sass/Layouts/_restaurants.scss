@@ -36,17 +36,18 @@
 
 .card__image {
   width: auto;
-  height: 250px;
+  height: 230px;
 }
 .card__nouveau {
   position: absolute;
   top: 5%;
   right: 5%;
   font-family: "Roboto";
+  font-size: larger;
   font-weight: 700;
   background-color: #99e2d0;
   color: #008766;
-  padding: 8px;
+  padding: 0 15px;
   border-radius: 5px;
 }
 

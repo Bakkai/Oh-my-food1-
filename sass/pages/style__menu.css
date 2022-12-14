@@ -1,0 +1,286 @@
+footer {
+  display: block;
+  background-color: #353535;
+  margin: 0;
+  border: 0;
+  font-size: 30px;
+  vertical-align: baseline;
+  padding: 25px;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer a img {
+  color: #fff;
+  width: 220px;
+  filter: invert(10);
+  padding-top: 30px;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li {
+  padding: 5px 0 5px 0;
+}
+footer ul .fa-utensils {
+  margin-right: 12px;
+}
+footer ul .fa-hands-helping {
+  margin-right: 5px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  position: relative;
+  box-shadow: 0 5px 2px -1px rgba(86, 81, 81, 0.1215686275);
+}
+header i {
+  position: absolute;
+  justify-content: center;
+  left: 20px;
+  color: #000;
+}
+
+.header__menu {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.background__image img {
+  height: 250px;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 0;
+}
+.background__image i {
+  right: 1rem;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 4rem;
+}
+.background__image i .far:hover {
+  visibility: hidden;
+}
+.background__image i .fas {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+}
+.background__image i .fas:hover {
+  opacity: 1;
+}
+.background__image h1 {
+  font-family: "cursive";
+  padding-top: 20px;
+}
+
+.carte__bouton {
+  -webkit-animation: appear 3s;
+          animation: appear 3s;
+}
+.carte__bouton .carte_checkIcon {
+  position: absolute;
+  text-align: center;
+  right: -100px;
+  top: 0;
+  width: 100px;
+  height: 95px;
+  background-color: #99E2D0;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.7s ease-in-out;
+  visibility: hidden;
+}
+.carte__bouton i {
+  font-size: 25px;
+  color: #fff;
+  visibility: hidden;
+}
+
+.menu__title {
+  padding: 5px 5%;
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1;
+  border-radius: 15px;
+  margin-top: -40px;
+  position: relative;
+}
+
+.menu__choice {
+  padding-bottom: 0px;
+  margin: 0 5vw;
+}
+
+#menu__bar {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #66e7c6;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.carte__body {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.carte__titre {
+  display: flex;
+  flex: 100%;
+  white-space: nowrap;
+  flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.carte__titre h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: larger;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.carte__description {
+  flex: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carte__description p {
+  margin-top: 2px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carte__prix {
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 900;
+  margin-left: auto;
+}
+
+.btn__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.btn__menuu {
+  width: 200px;
+  text-align: center;
+  margin: 2rem;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  color: white;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 7%;
+  box-shadow: 4px 4px 2px lightgrey;
+  width: 60%;
+  max-width: 250px;
+  cursor: pointer;
+}/*# sourceMappingURL=style__menu.css.map */

@@ -1,19 +1,6 @@
-*,
-::after,
-::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 16px;
-  background-color: #f6f6f6;
-}
-
+@use "../Layouts/footer.scss";
+@use "../Layouts/base";
+@use "../utils/animations";
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,8 +65,8 @@ header {
 }
 
   .carte__bouton {
+  animation: appear 3s;
 
-    animation: appear 3s;
  .carte_checkIcon {
   position: absolute;
   text-align: center;
@@ -153,6 +140,9 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 10px;
+  // &:nth-child() {
+
+  // }
 }
 
 .carte__titre {
@@ -240,40 +230,4 @@ header {
   width: 60%;
   max-width: 250px;
   cursor: pointer;
-}
-
-footer {
-  display: block;
-  background-color: #353535;
-  margin: 0;
-  border: 0;
-  font-size: 100%;
-  padding: 25px;
-  color: white;
-  & a {
-    color: white;
-    text-decoration: none;
-    & img {
-      color: #fff;
-      width: 120px;
-      -webkit-filter: invert(10);
-      filter: invert(10);
-    }
-  }
-  & ul {
-    list-style-type: none;
-    padding: 0;
-
-    & li {
-      padding: 5px 0 5px 0;
-    }
-
-    & .fa-utensils {
-      margin-right: 12px;
-    }
-
-    & .fa-hands-helping {
-      margin-right: 5px;
-    }
-  }
 }

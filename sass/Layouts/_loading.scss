@@ -1,0 +1,26 @@
+.loading_page {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   border-radius: 0;
+   background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: stretch;
+   background-color: #ffffff;
+   z-index: 2;
+   animation: fadeout 2s forwards;
+   .loader {
+      position: fixed;
+      height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      background-color: transparent;
+      border: 16px solid #99E2D0;
+      border-right: 16px solid #9356DC;
+      top: 40%;
+      transform: translateY(-50%);
+      animation: load 1.5s infinite ease-out;
+    }
+ }
