@@ -10,7 +10,7 @@
    align-items: stretch;
    background-color: #ffffff;
    z-index: 2;
-   animation: fadeout 2s forwards;
+   animation: fadeout 6s forwards;
    .loader {
       position: fixed;
       height: 100px;
@@ -21,6 +21,6 @@
       border-right: 16px solid #9356DC;
       top: 40%;
       transform: translateY(-50%);
-      animation: load 1.5s infinite ease-out;
+      animation: load 2s infinite ease-out;
     }
  }
