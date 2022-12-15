@@ -1,9 +1,8 @@
 .reservation {
   background: whitesmoke;
-  padding: 50px;
+  padding: 40px;
   display: flex;
-  height: 580px;
-  font-size: 30px;
+  height: 380px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -14,11 +13,10 @@
     margin: 2rem;
     background: linear-gradient(170deg, #ff79da, #9356dc);
     color: white;
-    font-size: 30px;
     padding: 1rem;
     border-radius: 50px;
     border: none;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     box-shadow: 4px 4px 2px lightgrey;
     max-width: min-content;
     cursor: pointer;
@@ -27,19 +25,20 @@
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 20px;
-    width: 300px;
-    height: 70px;
+    font-size: 16px;
+    align-items: center;
+    width: 180px;
+    height: 40px;
     a {
       text-decoration: none;
     }
   }
 }
 .reservation__title {
-  font-size: 35px;
-  padding: 15px;
+  font-size: 25px;
 }
 .reservation__undertitle {
-  font-size: 23px;
+  font-size: 16px;
+  margin: 0;
   font-weight: 200;
 }

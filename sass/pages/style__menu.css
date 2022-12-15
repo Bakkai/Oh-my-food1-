@@ -3,9 +3,9 @@ footer {
   background-color: #353535;
   margin: 0;
   border: 0;
-  font-size: 30px;
+  font-size: 20px;
   vertical-align: baseline;
-  padding: 25px;
+  padding: 20px;
   color: white;
 }
 footer a {
@@ -13,7 +13,7 @@ footer a {
 }
 footer a img {
   color: #fff;
-  width: 220px;
+  width: 180px;
   filter: invert(10);
   padding-top: 30px;
 }

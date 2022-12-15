@@ -32,7 +32,7 @@ header input {
   outline: none;
   font-weight: 500;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   padding: 15px 0px;
   background-color: #eaeaea;
 }
@@ -53,11 +53,11 @@ header input {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 98px;
+  height: 78px;
   background-color: #eaeaea;
   width: 100%;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 25px;
   padding: 20px;
 }
 .header__search i {
@@ -66,13 +66,12 @@ header input {
 
 .functionning {
   padding: 40px 20px;
-  width: 100%;
+  width: 95%;
   background-color: #fff;
 }
 .functionning h2 {
   display: block;
-  padding-top: 50px;
-  font-size: 40px;
+  font-size: 25px;
   -webkit-margin-before: 10px;
           margin-block-start: 10px;
   -webkit-margin-after: 10px;
@@ -91,25 +90,25 @@ header input {
 
 .functionning__a {
   display: flex;
-  margin: 60px 10px;
+  margin: 30px 10px;
   width: 100%;
-  height: 120px;
+  height: 90px;
   justify-items: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 16px;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   padding: 20px 35px 20px 35px;
-  border-radius: 40px;
+  border-radius: 30px;
   position: relative;
   margin-bottom: 30px;
   font-weight: 700;
   box-shadow: 4px 4px 2px lightgrey;
 }
 .functionning__a i {
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 30px;
+  padding-right: 15px;
+  padding-left: 10px;
+  font-size: 20px;
   color: #7e7e7e;
 }
 
@@ -117,15 +116,15 @@ header input {
   position: absolute;
   left: 0;
   transform: translate(-15px);
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #9356dc;
   color: #fff;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 50%;
 }
 
@@ -138,10 +137,9 @@ header input {
 
 .reservation {
   background: whitesmoke;
-  padding: 50px;
+  padding: 40px;
   display: flex;
-  height: 580px;
-  font-size: 30px;
+  height: 380px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -155,11 +153,10 @@ header input {
   margin: 2rem;
   background: linear-gradient(170deg, #ff79da, #9356dc);
   color: white;
-  font-size: 30px;
   padding: 1rem;
   border-radius: 50px;
   border: none;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   box-shadow: 4px 4px 2px lightgrey;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
@@ -170,27 +167,28 @@ header input {
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 20px;
-  width: 300px;
-  height: 70px;
+  font-size: 16px;
+  align-items: center;
+  width: 180px;
+  height: 40px;
 }
 .reservation .btn__explore a {
   text-decoration: none;
 }
 
 .reservation__title {
-  font-size: 35px;
-  padding: 15px;
+  font-size: 25px;
 }
 
 .reservation__undertitle {
-  font-size: 23px;
+  font-size: 16px;
+  margin: 0;
   font-weight: 200;
 }
 
 .restaurant {
   margin: 0 auto;
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 40px 20px;
   background-color: #f6f6f6;
   display: block;
 }
@@ -202,7 +200,7 @@ header input {
 }
 .restaurant img {
   width: 100%;
-  height: 350px;
+  height: 230px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin: auto;
@@ -228,7 +226,7 @@ header input {
 
 .card__image {
   width: auto;
-  height: 230px;
+  height: 200px;
 }
 
 .card__nouveau {
@@ -240,13 +238,13 @@ header input {
   font-weight: 700;
   background-color: #99e2d0;
   color: #008766;
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 5px;
 }
 
 .card__description {
   display: flex;
-  height: 250px;
+  height: 150px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
@@ -255,11 +253,11 @@ header input {
 .card__description h4,
 .card__description p {
   margin: 5px 0;
-  font-size: 30px;
+  font-size: 22px;
 }
 .card__description .fa-heart {
   position: absolute;
-  font-size: 45px;
+  font-size: 35px;
   bottom: 13%;
   right: 5%;
 }
@@ -270,8 +268,8 @@ header input {
   opacity: 1;
   color: #ff79da;
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-  -webkit-background-clip: content-box;
-  background-clip: content-box;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 footer {
@@ -279,9 +277,9 @@ footer {
   background-color: #353535;
   margin: 0;
   border: 0;
-  font-size: 30px;
+  font-size: 20px;
   vertical-align: baseline;
-  padding: 25px;
+  padding: 20px;
   color: white;
 }
 footer a {
@@ -289,7 +287,7 @@ footer a {
 }
 footer a img {
   color: #fff;
-  width: 220px;
+  width: 180px;
   filter: invert(10);
   padding-top: 30px;
 }
