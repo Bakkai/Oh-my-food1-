@@ -1,0 +1,59 @@
+@mixin button1 {
+  .btn {
+    width: min-content;
+    align-self: center;
+    white-space: nowrap;
+    margin: 2rem;
+    background: $color-gradient;
+    color: $white;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 5%;
+    box-shadow: 4px 4px 2px $lightgrey;
+    max-width: min-content;
+    cursor: pointer;
+  }
+  .btn__explore {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    font-size: 16px;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+@mixin button2 {
+    
+    .btn__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    
+    .btn__menuu {
+        width: 200px;
+        text-align: center;
+        margin: 2rem;
+        background: $color-gradient;
+        color: $white;
+        font-size: large;
+        padding: 1rem;
+        border-radius: 50px;
+        border: none;
+        margin-bottom: 7%;
+        -webkit-box-shadow: 4px 4px 2px $lightgrey;
+        box-shadow: 4px 4px 2px $lightgrey;
+        width: 60%;
+        max-width: 250px;
+        cursor: pointer;
+    }
+}
+    

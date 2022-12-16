@@ -1,3 +1,5 @@
+@import "../base/colors";
+
 .loading_page {
    position: absolute;
    height: 100%;
@@ -8,7 +10,7 @@
    flex-direction: row;
    justify-content: center;
    align-items: stretch;
-   background-color: #ffffff;
+   background-color: $white;
    z-index: 2;
    animation: fadeout 6s forwards;
    .loader {
@@ -17,8 +19,8 @@
       width: 100px;
       border-radius: 100%;
       background-color: transparent;
-      border: 16px solid #99E2D0;
-      border-right: 16px solid #9356DC;
+      border: 16px solid $color-tertiary;
+      border-right: 16px solid $color-primary;
       top: 40%;
       transform: translateY(-50%);
       animation: load 2s infinite ease-out;

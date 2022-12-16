@@ -6,13 +6,13 @@ footer {
   font-size: 20px;
   vertical-align: baseline;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 footer a {
-  color: white;
+  color: #ffffff;
 }
 footer a img {
-  color: #fff;
+  color: #ffffff;
   width: 180px;
   filter: invert(10);
   padding-top: 30px;
@@ -107,13 +107,13 @@ header {
   align-items: center;
   height: 65px;
   position: relative;
-  box-shadow: 0 5px 2px -1px rgba(86, 81, 81, 0.1215686275);
+  box-shadow: 0 5px 2px -1px #c6c6c6;
 }
 header i {
   position: absolute;
   justify-content: center;
   left: 20px;
-  color: #000;
+  color: #000000;
 }
 
 .header__menu {
@@ -141,7 +141,7 @@ header i {
 .background__image i .fas {
   opacity: 0;
   color: transparent;
-  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   transition: all 200ms ease-in-out;
@@ -175,7 +175,7 @@ header i {
 }
 .carte__bouton i {
   font-size: 25px;
-  color: #fff;
+  color: #ffffff;
   visibility: hidden;
 }
 
@@ -200,14 +200,14 @@ header i {
 #menu__bar {
   width: 3rem;
   height: 0.25rem;
-  background-color: #66e7c6;
+  background-color: #99E2D0;
   margin: 0;
   padding: 0;
   position: absolute;
 }
 
 .carte__body {
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 2px 2px 2px lightgrey;
   border-radius: 20px 20px;
   height: -webkit-fit-content;
@@ -272,8 +272,8 @@ header i {
   width: 200px;
   text-align: center;
   margin: 2rem;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #ffffff;
   font-size: large;
   padding: 1rem;
   border-radius: 50px;

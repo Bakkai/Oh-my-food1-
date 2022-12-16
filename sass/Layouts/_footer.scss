@@ -1,16 +1,17 @@
+@import "../base/colors";
 footer {
   display: block;
-  background-color: #353535;
+  background-color: $background-color--footer;
   margin: 0;
   border: 0;
   font-size: 20px;
   vertical-align: baseline;
   padding: 20px;
-  color: white;
+  color: $white;
   a {
-    color: white;
+    color: $white;
     img {
-      color: #fff;
+      color: $white;
   width: 180px;
   filter: invert(10);
   padding-top: 30px;

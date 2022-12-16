@@ -1,8 +1,8 @@
-@use './sass/layouts/_base.scss';
+@use './sass/base/_base.scss';
 @use './sass/layouts/_header.scss';
 @use './sass/layouts/_functionning.scss';
 @use './sass/layouts/_reservation.scss';
 @use './sass/layouts/_restaurants.scss';
 @use './sass/layouts/_footer.scss';
 @use './sass/utils/animations';
-@use './sass/Layouts/loading';
+@use './sass/components/loading';

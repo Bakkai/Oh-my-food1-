@@ -38,7 +38,7 @@ header input {
 }
 
 .header__logo {
-  background: white;
+  background: #ffffff;
   height: 200px;
   width: 100%;
   display: flex;
@@ -67,7 +67,7 @@ header input {
 .functionning {
   padding: 40px 20px;
   width: 95%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .functionning h2 {
   display: block;
@@ -109,7 +109,7 @@ header input {
   padding-right: 15px;
   padding-left: 10px;
   font-size: 20px;
-  color: #7e7e7e;
+  color: #000000;
 }
 
 .functionning__a__number {
@@ -121,8 +121,8 @@ header input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9356dc;
-  color: #fff;
+  background-color: #9356DC;
+  color: #ffffff;
   font-weight: 300;
   font-size: 18px;
   border-radius: 50%;
@@ -132,11 +132,11 @@ header input {
   background-color: #e2d6f1;
 }
 .functionning__a:hover i {
-  color: #9356dc;
+  color: #9356DC;
 }
 
 .reservation {
-  background: whitesmoke;
+  background: #f6f6f6;
   padding: 40px;
   display: flex;
   height: 380px;
@@ -151,8 +151,8 @@ header input {
   align-self: center;
   white-space: nowrap;
   margin: 2rem;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #ffffff;
   padding: 1rem;
   border-radius: 50px;
   border: none;
@@ -166,7 +166,7 @@ header input {
 .reservation .btn__explore {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 16px;
   align-items: center;
   width: 180px;
@@ -216,10 +216,10 @@ header input {
   margin: 0 auto;
 }
 .restaurant__cards .card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 30px;
   width: 100%;
-  box-shadow: -2px 5px 16px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 5px 16px -4px #c6c6c6;
   margin-bottom: 2em;
   position: relative;
 }
@@ -236,8 +236,8 @@ header input {
   font-family: "Roboto";
   font-size: larger;
   font-weight: 700;
-  background-color: #99e2d0;
-  color: #008766;
+  background-color: #99E2D0;
+  color: #3a8266;
   padding: 0 10px;
   border-radius: 5px;
 }
@@ -266,8 +266,8 @@ header input {
 }
 .card__description .fas:hover {
   opacity: 1;
-  color: #ff79da;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  color: #FF79DA;
+  background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -280,13 +280,13 @@ footer {
   font-size: 20px;
   vertical-align: baseline;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 footer a {
-  color: white;
+  color: #ffffff;
 }
 footer a img {
-  color: #fff;
+  color: #ffffff;
   width: 180px;
   filter: invert(10);
   padding-top: 30px;

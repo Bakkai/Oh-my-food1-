@@ -1,7 +1,8 @@
+@import "../base/colors";
 .restaurant {
   margin: 0 auto;
   padding: 20px 20px 40px 20px;
-  background-color: #f6f6f6;
+  background-color: $backgroung-color;
   display: block;
   h2 {
     font-size: 35px;
@@ -25,10 +26,10 @@
   max-width: 860px;
   margin: 0 auto;
   .card {
-    background-color: #fff;
+    background-color: $white;
     border-radius: 30px;
     width: 100%;
-    box-shadow: -2px 5px 16px -4px rgb(0 0 0 / 30%);
+    box-shadow: -2px 5px 16px -4px $box-shadow-color;
     margin-bottom: 2em;
     position: relative;
   }
@@ -45,8 +46,8 @@
   font-family: "Roboto";
   font-size: larger;
   font-weight: 700;
-  background-color: #99e2d0;
-  color: #008766;
+  background-color: $color-tertiary;
+  color: $background-color--nouveau;
   padding: 0 10px;
   border-radius: 5px;
 }
@@ -73,8 +74,8 @@
     opacity: 0;
     &:hover {
       opacity: 1;
-  color: #ff79da;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  color: $color-secondary;
+  background: $color-gradient;
   -webkit-background-clip: text;
   background-clip: text;
     }
