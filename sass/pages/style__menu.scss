@@ -36,17 +36,74 @@ header {
   & img {
     height: 250px;
     width: 100%;
+    position: relative;
     -o-object-fit: cover;
+    background-color: transparent;
     object-fit: cover;
-    z-index: 0;
+    z-index: auto;
+  }
+}
+
+.carte__bouton {
+  animation: appear 2s;
+  overflow: hidden;
+  &::nth-child(-n + 3) {
+    animation-delay: 100ms;
+  }
+  .carte_checkIcon {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    right: -100px;
+    top: 0;
+    width: 100px;
+    height: 95px;
+    background-color: $color-tertiary;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s ease-in-out;
+    display: none;
+        i {
+          font-size: 25px;
+        color: $white;
+        display:none;
+      }
+    }
+  }
+  
+.principal {
+  background-color: $background-color--location;
+  position: relative;
+  z-index: auto;
+}
+.menu__title {
+  padding: 5px 5%;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 999;
+  border-radius: 25px 0 0;
+  & h1 {
+    margin-top: -40px;
+    margin-bottom: -25px;
+    position: relative;
+    font-size: 26px;
+    font-style: italic;
   }
   & i {
     right: 1rem;
     text-align: center;
     font-weight: 400;
     position: absolute;
-    top: 4rem;
-    .far:hover{
+    top: 14rem;
+    .far:hover {
       visibility: hidden;
     }
     .fas {
@@ -61,57 +118,17 @@ header {
       }
     }
   }
-  & h1 {
-    font-family: "cursive";
-    padding-top: 20px;
-  }
-}
-
-  .carte__bouton {
-  animation: appear 3s;
-
- .carte_checkIcon {
-  position: absolute;
-  text-align: center;
-  right: -100px;
-  top: 0;
-  width: 100px;
-  height: 95px;
-  background-color: $color-tertiary;
-  transition: 1s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.7s ease-in-out;
-  visibility: hidden;
- }
-  i {
-    font-size: 25px;
-  color: $white;
-  visibility: hidden;
-  }
-}
-
-.menu__title {
-  padding: 5px 5%;
-  font-size: 26px;
-  display: flex;
-  flex-direction: row;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  z-index: 1;
-  border-radius: 15px;
-  margin-top: -40px;
-  position: relative;
 }
 
 .menu__choice {
   padding-bottom: 0px;
   margin: 0 5vw;
+  h2 {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 0 10px 0;
+  }
 }
 
 #menu__bar {
@@ -133,6 +150,7 @@ header {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  z-index: 2;
   justify-content: space-between;
   cursor: pointer;
   overflow: hidden;
@@ -142,7 +160,8 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 10px;
+  gap: 5px;
   // &:nth-child() {
 
   // }

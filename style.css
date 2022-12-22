@@ -322,6 +322,16 @@ footer ul .fa-hands-helping {
     transform: scale(1);
   }
 }
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes load {
   0% {
     transform: rotateZ(0deg);
@@ -356,8 +366,24 @@ footer ul .fa-hands-helping {
     z-index: -1;
   }
 }
+@-webkit-keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 .loading_page {
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   border-radius: 0;

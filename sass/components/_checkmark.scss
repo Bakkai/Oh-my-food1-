@@ -1,0 +1,22 @@
+.carte_checkIcon {
+width: 60px;
+visibility: visible;
+z-index: 100;
+position: absolute;
+  height: 100%;
+  width: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-color: #99E2D0;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: ease-out width 1s;
+
+i{
+    animation: rotate-icon 400ms forwards;
+    color: white;
+    transform: rotateZ(-180deg);
+    }
+}

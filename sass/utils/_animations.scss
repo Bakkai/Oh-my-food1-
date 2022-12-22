@@ -6,6 +6,16 @@
         transform: scale(1);
     }
 }
+@keyframes appear {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 @keyframes load {
     0% {
         transform: rotateZ(0deg);
@@ -23,5 +33,13 @@
     100% {
         opacity: 0;
         z-index: -1;
+    }
+}
+@keyframes rotate-icon {
+    0% {
+      transform: rotateZ(-180deg);
+    }
+    100% {
+      transform: rotateZ(0deg);
     }
 }

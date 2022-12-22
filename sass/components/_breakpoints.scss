@@ -1,43 +1,38 @@
-$breakpoints: (
-  "phone-down": 500px,
-  "tablet-up": 768px,
-  "tablet-down": 900px,
-  "desktop-up": 1024px,
-  "desktop-down": 1280px,
-  "widescreen-up": 1440px
-);
-@mixin phone-down {
-    @media (min-width: map-get($breakpoints,"phone-down")){
-        @content;
+
+.container{
+    @include flexbox(column, space-between);
+    row-gap: 18px;
+    @include tablet-only{
+        @include box-sizing(100%, 100%);
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1%;
+        row-gap: 25px;
+    }
+    
+    @include desktop-only{
+        @include box-sizing(100%, 100%);
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1%;
+        row-gap: 25px;
+        &--wrapper{
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        &--header{
+            flex-direction: row;
+            text-align: left;
+            overflow: hidden;
+            width: 100%;
+        }
     }
 }
-@mixin tablet-up {
-    @media (min-width: map-get($breakpoints,"tablet-up")){
-        @content;
-    }
-}
-@mixin tablet-down {
-    @media (min-width: map-get($breakpoints,"tablet-down")){
-        @content;
-    }
-}
-@mixin desktop-up {
-    @media (min-width: map-get($breakpoints,"desktop-up")){
-        @content;
-    }
-}
-@mixin desktop-down {
-    @media (min-width: map-get($breakpoints,"desktop-down")){
-        @content;
-    }
-}
-@mixin widescreen-up {
-    @media (min-width: map-get($breakpoints,"widescreen-up")){
-        @content;
-    }
-}
-@mixin breakpoint($bp:0) {
-    @media (min-width: $bp){
-        @content;
+
+.menu-wrapper{
+    width: 100%;
+    @include desktop-only{
+        flex-direction: row;
     }
 }

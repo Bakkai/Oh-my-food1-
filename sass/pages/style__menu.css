@@ -67,6 +67,16 @@ a {
     transform: scale(1);
   }
 }
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes load {
   0% {
     transform: rotateZ(0deg);
@@ -101,6 +111,22 @@ a {
     z-index: -1;
   }
 }
+@-webkit-keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes rotate-icon {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -124,43 +150,26 @@ header i {
 .background__image img {
   height: 250px;
   width: 100%;
+  position: relative;
   -o-object-fit: cover;
+  background-color: transparent;
   object-fit: cover;
-  z-index: 0;
-}
-.background__image i {
-  right: 1rem;
-  text-align: center;
-  font-weight: 400;
-  position: absolute;
-  top: 4rem;
-}
-.background__image i .far:hover {
-  visibility: hidden;
-}
-.background__image i .fas {
-  opacity: 0;
-  color: transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 200ms ease-in-out;
-}
-.background__image i .fas:hover {
-  opacity: 1;
-}
-.background__image h1 {
-  font-family: "cursive";
-  padding-top: 20px;
+  z-index: auto;
 }
 
 .carte__bouton {
-  -webkit-animation: appear 3s;
-          animation: appear 3s;
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  overflow: hidden;
+}
+.carte__bouton::nth-child(-n + 3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 .carte__bouton .carte_checkIcon {
   position: absolute;
   text-align: center;
+  z-index: 1;
   right: -100px;
   top: 0;
   width: 100px;
@@ -171,30 +180,67 @@ header i {
   align-items: center;
   justify-content: center;
   transition: 0.7s ease-in-out;
-  visibility: hidden;
+  display: none;
 }
-.carte__bouton i {
+.carte__bouton .carte_checkIcon i {
   font-size: 25px;
   color: #ffffff;
-  visibility: hidden;
+  display: none;
+}
+
+.principal {
+  background-color: #eaeaea;
+  position: relative;
+  z-index: auto;
 }
 
 .menu__title {
   padding: 5px 5%;
-  font-size: 26px;
   display: flex;
   flex-direction: row;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 1;
-  border-radius: 15px;
+  z-index: 999;
+  border-radius: 25px 0 0;
+}
+.menu__title h1 {
   margin-top: -40px;
+  margin-bottom: -25px;
   position: relative;
+  font-size: 26px;
+  font-style: italic;
+}
+.menu__title i {
+  right: 1rem;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  top: 14rem;
+}
+.menu__title i .far:hover {
+  visibility: hidden;
+}
+.menu__title i .fas {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 200ms ease-in-out;
+}
+.menu__title i .fas:hover {
+  opacity: 1;
 }
 
 .menu__choice {
   padding-bottom: 0px;
   margin: 0 5vw;
+}
+.menu__choice h2 {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 0;
+  padding: 30px 0 10px 0;
 }
 
 #menu__bar {
@@ -215,13 +261,17 @@ header i {
   height: fit-content;
   margin: 10px;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  z-index: 2;
   justify-content: space-between;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  padding: 10px;
+  gap: 5px;
 }
 
 .carte__titre {
